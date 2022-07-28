@@ -9,28 +9,28 @@ const Navbar = () => {
     navbarHoverDropdown()
     window.onscroll = () => { scrollFunction() };
 
-    const navbar: HTMLBaseElement = document.getElementById('shipdeo-navbar') as HTMLBaseElement;
+    const navbar: HTMLBaseElement = document.getElementById('project-navbar') as HTMLBaseElement;
     const sticky = 60;
 
     if(window.pageYOffset >= sticky) {
-      navbar.classList.add('shipdeo-navbar-sticky');
-      navbar.classList.add('shipdeo-navbar-bg-sticky');
+      navbar.classList.add('project-navbar-sticky');
+      navbar.classList.add('project-navbar-bg-sticky');
       navbar.classList.add('shadow-sm');
     } else {
-      navbar.classList.remove('shipdeo-navbar-swtick');
-      navbar.classList.remove('shipdeo-navbar-bg-sticky');
+      navbar.classList.remove('project-navbar-swtick');
+      navbar.classList.remove('project-navbar-bg-sticky');
       navbar.classList.remove('shadow-sm');
     }
 
     function scrollFunction() {
       if (window.pageYOffset >= sticky) {
-          navbar.classList.add("shipdeo-navbar-sticky")
-          navbar.classList.add("shipdeo-navbar-bg-sticky")
+          navbar.classList.add("project-navbar-sticky")
+          navbar.classList.add("project-navbar-bg-sticky")
           navbar.classList.add("shadow-sm");
           // navbarSlot.classList.add("scrolled");
       } else {
-          navbar.classList.remove("shipdeo-navbar-bg-sticky")
-          navbar.classList.remove("shipdeo-navbar-sticky");
+          navbar.classList.remove("project-navbar-bg-sticky")
+          navbar.classList.remove("project-navbar-sticky");
           navbar.classList.remove("shadow-sm");
           // navbarSlot.classList.remove("scrolled");
       }
@@ -68,7 +68,7 @@ const Navbar = () => {
   
 
   return (
-    <nav className="navbar navbar-expand-lg bg-transparent d-flex align-items-start" id="shipdeo-navbar">
+    <nav className="navbar navbar-expand-lg bg-transparent d-flex align-items-start" id="project-navbar">
       <div className="col-6 d-block d-lg-none d-xl-none order-2 text-right my-sm-auto my-auto">
         <button className="navbar-toggler ml-auto d-lg-none d-xl-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -76,18 +76,8 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav float-right" style={{ margin: "auto" }}>
-            {/* <NavbarLink isDropdown={true} dropdownLinkName="Product" dropdownItem={this.state.dropdownItem.product} />
-            <NavbarLink isDropdown={true} dropdownLinkName="About Us" dropdownItem={this.state.dropdownItem.about} /> */}
             <NavbarLink isDropdown={false} singeLinkName={"Developer"} singleLinkRef={"developer"} />
             <NavbarLink isDropdown={false} singeLinkName={"About Us"} singeLinkRef={"about"} />
-            {/* <NavbarLink isDropdown={false} singeLinkName={"Contact Us"} singeLinkRef={"https://wa.me/6287897759000"} /> */}
-            {/* <li className="nav-item dropdown ml-md-auto" onClick={() => 'coba'}>
-              <div id="btn-login-register">
-                <a href="https://portal.shipdeo.com/#/login" className="navbar-account-btn btn btn-info">Login</a>
-                <div className="navbar-btn-separator d-lg-none"></div>
-                <a href="https://portal.shipdeo.com/#/register" className="btn btn-outline-info">Register</a>
-              </div>
-            </li> */}
           </ul>
         </div>
       </div>
@@ -115,15 +105,6 @@ const Navbar = () => {
               </ul>
             </div>
           </div>
-          {/* <div className="col-3 d-none d-lg-block align-self-center">
-            <div className="row">
-              <div className="col-12" id="btn-login-register">
-                <a href="https://portal.shipdeo.com/#/login" className="navbar-account-btn btn btn-info">Login</a>
-                <div className="mx-1 d-inline"></div>
-                <a href="https://portal.shipdeo.com/#/register" className="btn btn-outline-info">Register</a>
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
     </nav>
