@@ -101,7 +101,7 @@ const Navbar = () => {
               <picture className="img-fluid">
                 <source media="(min-width:992px)" srcSet="" className="w-100"/>
                 <source media="(min-width:600px)" srcSet="" className="w-100"/>
-                <img src={require('../../resIcon/logo.jpg')} style={{width: 'auto', height: '42px'}}/>
+                <img alt="" src={require('../../resIcon/logo.jpg')} style={{width: 'auto', height: '42px'}}/>
               </picture>
             </a>
           </div>

@@ -4,12 +4,8 @@ import './home.scss'
 const HomeContainer = () => {
   return (
     <React.Fragment>
-      {/* <section className="header">
-        <a href="#" className="logo"><h2>Travel Pro-D63</h2></a>
-        <div className="toggle"><img src="toggle.png" /></div>
-      </section> */}
       <section className="banner">
-        <img src={require('../../shared/image/upi2.jpeg')} className="fitBg" />
+        <img alt='' src={require('../../shared/image/upi2.jpeg')} className="fitBg" />
         <div className="content">
           <h2>Welcome to Our World</h2>
           <p>Explore the world with us! And enjoy vocation</p>
@@ -23,11 +19,11 @@ const HomeContainer = () => {
           <a href="#destination" className="btn">Popular Place and Destination</a>
         </div>
         <div className="imgBx">
-          <img src={require('../../shared/image/web2.jpg')} className="fitBg" />
+          <img alt='' src={require('../../shared/image/web2.jpg')} className="fitBg" />
         </div>
       </section>
       <section className="banner2">
-        <img src="web7.jpg" className="fitBg" />
+        <img alt='' src="web7.jpg" className="fitBg" />
       </section>
       <section className="destination" id="destination">
         <div className="conetnt">
@@ -37,7 +33,7 @@ const HomeContainer = () => {
         <div className="destinationList">
           <div className="box">
             <div className="imgBx">
-              <img src="web1.jpg" className="fitBg" />
+              <img alt='' src="web1.jpg" className="fitBg" />
             </div>
             <div className="content">
               <h2>Borobudur Temple<br /><span>Indonesia</span></h2>
@@ -45,7 +41,7 @@ const HomeContainer = () => {
           </div>
           <div className="box">
             <div className="imgBx">
-              <img src="web9.jpg" className="fitBg" />
+              <img alt='' src="web9.jpg" className="fitBg" />
             </div>
             <div className="content">
               <h2>Papandaian's Montain<br /><span>Indonesia</span></h2>
@@ -53,7 +49,7 @@ const HomeContainer = () => {
           </div>
           <div className="box">
             <div className="imgBx">
-              <img src="web8.jpg" className="fitBg" />
+              <img alt='' src="web8.jpg" className="fitBg" />
             </div>
             <div className="content">
               <h2>Raja Ampat<br /><span>Indonesia</span></h2>
@@ -61,7 +57,7 @@ const HomeContainer = () => {
           </div>
           <div className="box">
             <div className="imgBx">
-              <img src="web10.jpg" className="fitBg" />
+              <img alt='' src="web10.jpg" className="fitBg" />
             </div>
             <div className="content">
               <h2>Bali's Island<br /><span>Indonesia</span></h2>
@@ -69,7 +65,7 @@ const HomeContainer = () => {
           </div>
           <div className="box">
             <div className="imgBx">
-              <img src="web7.jpg" className="fitBg" />
+              <img alt='' src="web7.jpg" className="fitBg" />
             </div>
             <div className="content">
               <h2>Bromo<br /><span>Indonesia</span></h2>
@@ -79,14 +75,14 @@ const HomeContainer = () => {
         <a href="#" className="btn">View More</a>
       </section>
       <section className="banner3">
-        <img src="banner3.jpg" className="fitBg" />
+        <img alt='' src="banner3.jpg" className="fitBg" />
       </section>
 
       <section className="footer">
         <ul className="sci">
-          <li><a href="#"><img src="facebook.png" /></a></li>
-          <li><a href="#"><img src="twitter.png" /></a></li>
-          <li><a href="#"><img src="instagram.png" /></a></li>
+          <li><a href="#"><img alt='' src="facebook.png" /></a></li>
+          <li><a href="#"><img alt='' src="twitter.png" /></a></li>
+          <li><a href="#"><img alt='' src="instagram.png" /></a></li>
         </ul>
         <h4 className="copyrightText">Copyright 2020 <a href="#">Team Pro-63</a></h4>
       </section>
